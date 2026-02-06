@@ -5,15 +5,28 @@
   <title>Aastha Gade | Data · AI · Strategy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
     body {
       background: radial-gradient(circle at top, #0f172a, #020617);
     }
+
     .card {
-      transition: transform 0.3s ease;
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(56, 189, 248, 0.18);
+      transition: all 0.35s ease;
     }
+
     .card:hover {
-      transform: translateY(-6px) scale(1.02);
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 0 35px rgba(56, 189, 248, 0.35);
+      border-color: rgba(56, 189, 248, 0.6);
+    }
+
+    .badge {
+      border: 1px solid rgba(255,255,255,0.12);
+      backdrop-filter: blur(6px);
     }
   </style>
 </head>
@@ -22,42 +35,43 @@
 
   <!-- HERO -->
   <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
-    <h1 class="text-5xl md:text-6xl font-bold text-cyan-400 mb-4">
+    <h1 class="text-5xl md:text-6xl font-bold text-cyan-400 mb-4 tracking-wide">
       Aastha Gade
     </h1>
     <p class="text-xl md:text-2xl text-slate-300 mb-6">
       Data · AI · Strategy · Insights
     </p>
-    <p class="max-w-2xl text-slate-400">
-      I build intelligent systems, analytics platforms, and AI-driven insights that turn messy data into clear decisions.
+    <p class="max-w-2xl text-slate-400 leading-relaxed">
+      I design data-driven systems, AI models, and analytical platforms that turn
+      complex information into clear, strategic decisions.
     </p>
   </section>
 
   <!-- SKILLS -->
   <section class="py-20 px-6 max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-cyan-300 mb-10 text-center">
+    <h2 class="text-3xl font-bold text-cyan-300 mb-12 text-center">
       Skill Deck
     </h2>
 
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="card bg-slate-900 p-6 rounded-xl shadow-lg">
-        <h3 class="text-xl font-semibold text-cyan-400 mb-3">🧠 AI / ML</h3>
-        <p class="text-slate-400">
-          Deep learning, forecasting, anomaly detection, MLOps, GenAI concepts.
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="card p-8 rounded-2xl shadow-lg">
+        <h3 class="text-xl font-semibold text-cyan-400 mb-4">🧠 AI / ML</h3>
+        <p class="text-slate-400 leading-relaxed">
+          Deep learning, forecasting, anomaly detection, MLOps, and GenAI concepts.
         </p>
       </div>
 
-      <div class="card bg-slate-900 p-6 rounded-xl shadow-lg">
-        <h3 class="text-xl font-semibold text-purple-400 mb-3">📊 Data Science</h3>
-        <p class="text-slate-400">
-          Statistical analysis, experimentation, feature engineering, insights.
+      <div class="card p-8 rounded-2xl shadow-lg">
+        <h3 class="text-xl font-semibold text-purple-400 mb-4">📊 Data Science</h3>
+        <p class="text-slate-400 leading-relaxed">
+          Statistical modeling, experimentation, feature engineering, and insights.
         </p>
       </div>
 
-      <div class="card bg-slate-900 p-6 rounded-xl shadow-lg">
-        <h3 class="text-xl font-semibold text-pink-400 mb-3">⚙️ Data Engineering</h3>
-        <p class="text-slate-400">
-          ETL pipelines, cloud systems, scalable data platforms.
+      <div class="card p-8 rounded-2xl shadow-lg">
+        <h3 class="text-xl font-semibold text-pink-400 mb-4">⚙️ Data Engineering</h3>
+        <p class="text-slate-400 leading-relaxed">
+          ETL pipelines, cloud-native systems, and scalable data platforms.
         </p>
       </div>
     </div>
@@ -65,61 +79,73 @@
 
   <!-- PROJECTS -->
   <section class="py-20 px-6 max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-cyan-300 mb-10 text-center">
+    <h2 class="text-3xl font-bold text-cyan-300 mb-12 text-center">
       Project Pokédex
     </h2>
 
-    <div class="grid md:grid-cols-2 gap-8">
+    <div class="grid md:grid-cols-2 gap-10">
 
       <!-- Project 1 -->
-      <div class="card bg-slate-900 p-6 rounded-xl shadow-lg">
-        <h3 class="text-xl font-semibold text-cyan-400 mb-2">🛡️ Deepfake Detection</h3>
-        <div class="flex gap-2 flex-wrap mb-3">
-          <span class="px-2 py-1 text-xs rounded bg-cyan-900 text-cyan-300">AI</span>
-          <span class="px-2 py-1 text-xs rounded bg-purple-900 text-purple-300">Deep Learning</span>
-          <span class="px-2 py-1 text-xs rounded bg-pink-900 text-pink-300">Computer Vision</span>
+      <div class="card p-8 rounded-2xl shadow-lg">
+        <h3 class="text-xl font-semibold text-cyan-400 mb-3">
+          🛡️ Deepfake Detection
+        </h3>
+        <div class="flex gap-2 flex-wrap mb-4">
+          <span class="badge px-3 py-1 text-xs rounded text-cyan-300 bg-cyan-900">AI</span>
+          <span class="badge px-3 py-1 text-xs rounded text-purple-300 bg-purple-900">Deep Learning</span>
+          <span class="badge px-3 py-1 text-xs rounded text-pink-300 bg-pink-900">Computer Vision</span>
         </div>
-        <p class="text-slate-400">
-          CNNs, ViTs, adversarial robustness testing across political media datasets.
+        <p class="text-slate-400 leading-relaxed">
+          Comparative evaluation of CNNs and ViTs with adversarial robustness testing
+          across political media datasets.
         </p>
       </div>
 
       <!-- Project 2 -->
-      <div class="card bg-slate-900 p-6 rounded-xl shadow-lg">
-        <h3 class="text-xl font-semibold text-purple-400 mb-2">🚕 MLOps Taxi Forecasting</h3>
-        <div class="flex gap-2 flex-wrap mb-3">
-          <span class="px-2 py-1 text-xs rounded bg-purple-900 text-purple-300">MLOps</span>
-          <span class="px-2 py-1 text-xs rounded bg-cyan-900 text-cyan-300">Time Series</span>
-          <span class="px-2 py-1 text-xs rounded bg-green-900 text-green-300">AWS</span>
+      <div class="card p-8 rounded-2xl shadow-lg">
+        <h3 class="text-xl font-semibold text-purple-400 mb-3">
+          🚕 MLOps Taxi Forecasting
+        </h3>
+        <div class="flex gap-2 flex-wrap mb-4">
+          <span class="badge px-3 py-1 text-xs rounded text-purple-300 bg-purple-900">MLOps</span>
+          <span class="badge px-3 py-1 text-xs rounded text-cyan-300 bg-cyan-900">Time Series</span>
+          <span class="badge px-3 py-1 text-xs rounded text-green-300 bg-green-900">AWS</span>
         </div>
-        <p class="text-slate-400">
-          End-to-end ML pipelines with AWS, MLflow, CI/CD, and live dashboards.
+        <p class="text-slate-400 leading-relaxed">
+          End-to-end ML pipelines with automated retraining, monitoring, and live
+          dashboards deployed on AWS.
         </p>
       </div>
 
       <!-- Project 3 -->
-      <div class="card bg-slate-900 p-6 rounded-xl shadow-lg">
-        <h3 class="text-xl font-semibold text-pink-400 mb-2">🧬 Healthcare ML</h3>
-        <div class="flex gap-2 flex-wrap mb-3">
-          <span class="px-2 py-1 text-xs rounded bg-pink-900 text-pink-300">ML</span>
-          <span class="px-2 py-1 text-xs rounded bg-cyan-900 text-cyan-300">APIs</span>
-          <span class="px-2 py-1 text-xs rounded bg-purple-900 text-purple-300">Cloud</span>
+      <div class="card p-8 rounded-2xl shadow-lg">
+        <h3 class="text-xl font-semibold text-pink-400 mb-3">
+          🧬 Healthcare ML
+        </h3>
+        <div class="flex gap-2 flex-wrap mb-4">
+          <span class="badge px-3 py-1 text-xs rounded text-pink-300 bg-pink-900">ML</span>
+          <span class="badge px-3 py-1 text-xs rounded text-cyan-300 bg-cyan-900">APIs</span>
+          <span class="badge px-3 py-1 text-xs rounded text-purple-300 bg-purple-900">Cloud</span>
         </div>
-        <p class="text-slate-400">
-          Breast cancer prediction APIs deployed on cloud infrastructure.
+        <p class="text-slate-400 leading-relaxed">
+          Breast cancer prediction models deployed as cloud-based APIs with
+          real-time inference.
         </p>
       </div>
 
       <!-- Project 4 -->
-      <div class="card bg-slate-900 p-6 rounded-xl shadow-lg">
-        <h3 class="text-xl font-semibold text-green-400 mb-2">✈️ Flight Delay Analytics</h3>
-        <div class="flex gap-2 flex-wrap mb-3">
-          <span class="px-2 py-1 text-xs rounded bg-green-900 text-green-300">Analytics</span>
-          <span class="px-2 py-1 text-xs rounded bg-purple-900 text-purple-300">Clustering</span>
-          <span class="px-2 py-1 text-xs rounded bg-cyan-900 text-cyan-300">Forecasting</span>
+      <div class="card p-8 rounded-2xl shadow-lg">
+        <h3 class="text-xl font-semibold text-green-400 mb-3">
+          ✈️ Flight Delay Analytics
+        </h3>
+        <div class="flex gap-2 flex-wrap mb-4">
+          <span class="badge px-3 py-1 text-xs rounded text-green-300 bg-green-900">Analytics</span>
+          <span class="badge px-3 py-1 text-xs rounded text-purple-300 bg-purple-900">Clustering</span>
+          <span class="badge px-3 py-1 text-xs rounded text-cyan-300 bg-cyan-900">Forecasting</span>
         </div>
-        <p class="text-slate-400">
-          Large-scale clustering and time-series forecasting on 5M+ flights.
+        <p class="text-slate-400 leading-relaxed">
+          Large-scale clustering and time-series forecasting on 5M+ flight records
+          to drive operational insights.
         </p>
       </div>
 
@@ -127,8 +153,8 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="py-10 text-center text-slate-500">
-    © 2026 Aastha Gade · Built with ❤️ & caffeine
+  <footer class="py-12 text-center text-slate-500">
+    © 2026 Aastha Gade · Built with focus, intent, and caffeine
   </footer>
 
 </body>
